@@ -14,6 +14,7 @@ describe('AppNavbarMenuComponent', () => {
   }));
 
   beforeEach(() => {
+  
     fixture = TestBed.createComponent(AppNavbarMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
