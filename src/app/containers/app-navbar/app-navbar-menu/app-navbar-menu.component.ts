@@ -25,9 +25,15 @@ enum Key {
       >
       <div class="menu-backdrop" *ngIf="!hide" (click)="hideMenu()"></div>
       <div class="list-group">
+        <button class="list-group-item"
+           *ngIf="signOut"
+          (click)="handleSignIn()">
+          <i class="fa fa-sign-in"></i> Sign In
+        </button>
         <a class="list-group-item" href="http://3dvirtuallabs.com" target="_blank">
           Made with <i class="fa fa-heart text-danger"></i> By 3D Virtual Labs
         </a>
+
         <button class="list-group-item"
           *ngIf="signedIn"
           (click)="handleSignOut()">

@@ -25,13 +25,13 @@ import { EchoesState } from '../../core/store';
           <ng-content></ng-content>
         </div>
         <section class="pull-right navbar-text navbar-actions">
-          <app-navbar-user 
-            [signedIn]="isSignIn()" 
+          <app-navbar-user
+            [signedIn]="isSignIn()"
             [userImageUrl]="(user$ | async).profile.imageUrl"
             (signIn)="signInUser()"
-            ></app-navbar-user>
-          <app-navbar-menu 
-            [appVersion]="appVersion$ | async"            
+            ></app-navbar-user>            
+          <app-navbar-menu
+            [appVersion]="appVersion$ | async"
             [signedIn]="isSignIn()"
             (signOut)="signOutUser()"
             (versionUpdate)="updateVersion()"
