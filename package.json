@@ -3,7 +3,7 @@
   "version": "3.4.1",
   "license": "MIT",
   "scripts": {
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
